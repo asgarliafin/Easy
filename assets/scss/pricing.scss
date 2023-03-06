@@ -1,0 +1,168 @@
+// Start of Pricing code
+section.pricing {
+  padding: 70px 0;
+  text-align: center;
+
+  .section-title {
+    margin-bottom: 3rem;
+
+    .heading {
+      margin-bottom: 1rem;
+    }
+
+    .switch-plan {
+      height: 30px;
+    }
+  }
+
+  .switch-plan-w {
+    display: inline-flex;
+
+    .preiod {
+      font-size: 14px;
+      .year {
+        margin-bottom: 0.5rem;
+        display: inline-block;
+      }
+      .save-percent {
+        font-size: 10px;
+        background: #ff6363;
+        padding: 4px 10px;
+        font-weight: 700;
+        border-radius: 30px;
+        color: #ffffff;
+      }
+    }
+    .preiod-toggle {
+      width: 50px;
+      border-radius: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 30px;
+      background: #ff6363;
+      position: relative;
+      -webkit-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease;
+      transition: 0.3s all ease;
+
+      &::before {
+        -webkit-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
+        transition: 0.3s all ease;
+        content: "";
+        position: absolute;
+        left: 1px;
+        height: 28px;
+        width: 28px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 5px 10px 0 rgba($color: #000000, $alpha: 0.2);
+      }
+
+      &.active::before {
+        left: 21px;
+      }
+    }
+  }
+
+  .pricing-item {
+    padding: 70px 30px;
+    text-align: center;
+
+    &.active {
+      background: #ffffff;
+      border-radius: 7px;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 30px;
+      line-height: 1.2;
+    }
+
+    .description {
+      border-bottom: 1px solid #efefef;
+      margin-bottom: 20px;
+
+      p {
+        color: #a0a4ab;
+        margin-bottom: 1rem;
+      }
+    }
+    .preiod-change {
+      margin-bottom: 1.5rem;
+
+      .preiod-wrap {
+        display: flex !important;
+        justify-content: center;
+
+        .period-subtitle {
+          margin-right: 0.25rem !important;
+        }
+        .price-time{
+            display: none;
+            &.active {
+              display: block;
+            }
+          }
+      }
+
+      .price-wrap {
+        display: block;
+        color: #ff6363;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.5;
+
+        & > div.price {
+          height: 46px;
+          overflow: hidden;
+
+          & > div {
+            transition: 0.3s all ease;
+            -webkit-transition: 0.3s all ease;
+            -moz-transition: 0.3s all ease;
+            -ms-transition: 0.3s all ease;
+            -o-transition: 0.3s all ease;
+
+            
+
+            .price-count{
+              display: none;
+              &.active {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .period-list {
+      margin-bottom: 1.5rem;
+
+      li {
+        line-height: 1.4;
+        margin-bottom: 8px;
+        display: flex;
+
+        .period-icon {
+          margin-right: 0.5rem;
+          margin-top: 0.25rem;
+          width: 16px;
+          height: 16px;
+        }
+        span:last-of-type {
+          line-height: 1.4;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+// End of Pricing code

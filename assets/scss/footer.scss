@@ -1,0 +1,80 @@
+// Start of Footer Code
+
+#footer {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-size: 15px;
+
+  .row {
+    justify-content: space-between;
+
+    .widget {
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        line-height: 1.2;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      ul.social {
+        margin-bottom: 1rem;
+        li {
+          display: inline-block;
+
+          a {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            display: inline-block;
+            position: relative;
+            color: #000;
+
+            span {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+      .links li{
+        display: block;
+        margin-bottom: 10px;
+
+        a{
+            color: #000;
+        }
+      }
+    }
+  }
+  .copyright{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 40px;
+    margin-top: 40px;
+
+    p{
+        margin-bottom: 1rem;
+   
+   
+        .heart-icon{
+            color: #dc3545!important;
+            position: relative;
+            bottom: 1px;
+        }
+    
+
+    }
+}
+}
+
+// End of Footer Code

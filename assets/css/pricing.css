@@ -1,0 +1,115 @@
+section.pricing {
+  padding: 70px 0;
+  text-align: center; }
+  section.pricing .section-title {
+    margin-bottom: 3rem; }
+    section.pricing .section-title .heading {
+      margin-bottom: 1rem; }
+    section.pricing .section-title .switch-plan {
+      height: 30px; }
+  section.pricing .switch-plan-w {
+    display: inline-flex; }
+    section.pricing .switch-plan-w .preiod {
+      font-size: 14px; }
+      section.pricing .switch-plan-w .preiod .year {
+        margin-bottom: 0.5rem;
+        display: inline-block; }
+      section.pricing .switch-plan-w .preiod .save-percent {
+        font-size: 10px;
+        background: #ff6363;
+        padding: 4px 10px;
+        font-weight: 700;
+        border-radius: 30px;
+        color: #ffffff; }
+    section.pricing .switch-plan-w .preiod-toggle {
+      width: 50px;
+      border-radius: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 30px;
+      background: #ff6363;
+      position: relative;
+      -webkit-transition: 0.3s all ease;
+      -o-transition: 0.3s all ease;
+      transition: 0.3s all ease; }
+      section.pricing .switch-plan-w .preiod-toggle::before {
+        -webkit-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
+        transition: 0.3s all ease;
+        content: "";
+        position: absolute;
+        left: 1px;
+        height: 28px;
+        width: 28px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); }
+      section.pricing .switch-plan-w .preiod-toggle.active::before {
+        left: 21px; }
+  section.pricing .pricing-item {
+    padding: 70px 30px;
+    text-align: center; }
+    section.pricing .pricing-item.active {
+      background: #ffffff;
+      border-radius: 7px; }
+    section.pricing .pricing-item h3 {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 30px;
+      line-height: 1.2; }
+    section.pricing .pricing-item .description {
+      border-bottom: 1px solid #efefef;
+      margin-bottom: 20px; }
+      section.pricing .pricing-item .description p {
+        color: #a0a4ab;
+        margin-bottom: 1rem; }
+    section.pricing .pricing-item .preiod-change {
+      margin-bottom: 1.5rem; }
+      section.pricing .pricing-item .preiod-change .preiod-wrap {
+        display: flex !important;
+        justify-content: center; }
+        section.pricing .pricing-item .preiod-change .preiod-wrap .period-subtitle {
+          margin-right: 0.25rem !important; }
+        section.pricing .pricing-item .preiod-change .preiod-wrap .price-time {
+          display: none; }
+          section.pricing .pricing-item .preiod-change .preiod-wrap .price-time.active {
+            display: block; }
+      section.pricing .pricing-item .preiod-change .price-wrap {
+        display: block;
+        color: #ff6363;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.5; }
+        section.pricing .pricing-item .preiod-change .price-wrap > div.price {
+          height: 46px;
+          overflow: hidden; }
+          section.pricing .pricing-item .preiod-change .price-wrap > div.price > div {
+            transition: 0.3s all ease;
+            -webkit-transition: 0.3s all ease;
+            -moz-transition: 0.3s all ease;
+            -ms-transition: 0.3s all ease;
+            -o-transition: 0.3s all ease; }
+            section.pricing .pricing-item .preiod-change .price-wrap > div.price > div .price-count {
+              position: relative;
+              display: none;
+              top: -900px; }
+              section.pricing .pricing-item .preiod-change .price-wrap > div.price > div .price-count.active {
+                top: 0px; }
+    section.pricing .pricing-item .period-list {
+      margin-bottom: 1.5rem; }
+      section.pricing .pricing-item .period-list li {
+        line-height: 1.4;
+        margin-bottom: 8px;
+        display: flex; }
+        section.pricing .pricing-item .period-list li .period-icon {
+          margin-right: 0.5rem;
+          margin-top: 0.25rem;
+          width: 16px;
+          height: 16px; }
+        section.pricing .pricing-item .period-list li span:last-of-type {
+          line-height: 1.4;
+          text-align: left; }
