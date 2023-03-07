@@ -1,6 +1,9 @@
  @import "mixin";
 
+
 #header {
+  background-color: darkgoldenrod;
+
   position: relative;
 
   // Start of Nav code
@@ -11,8 +14,10 @@
     width: 100%;
     position: absolute;
     top: 0;
-    z-index: 2;
+    z-index: 99;
     color: #ffffff;
+
+
 
     .container{
         display: flex;
@@ -25,11 +30,15 @@
         color: inherit;
       }
 
-      .toggle{
-        font-size: 20px;
-        color: inherit;
+      .mobile-navigation{
+        .toggle{
+          font-size: 20px;
+          color: inherit;
+        }
+        .menu{
+          display: none;
+        }
       }
-
     }
   }
 

@@ -1,4 +1,5 @@
 #header {
+  background-color: darkgoldenrod;
   position: relative;
 }
 #header #mobile-navbar {
@@ -7,7 +8,7 @@
   width: 100%;
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 99;
   color: #ffffff;
 }
 #header #mobile-navbar .container {
@@ -20,9 +21,12 @@
   font-weight: bold;
   color: inherit;
 }
-#header #mobile-navbar .container .toggle {
+#header #mobile-navbar .container .mobile-navigation .toggle {
   font-size: 20px;
   color: inherit;
+}
+#header #mobile-navbar .container .mobile-navigation .menu {
+  display: none;
 }
 #header #navbar.navbar {
   position: absolute;

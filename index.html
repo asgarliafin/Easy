@@ -40,10 +40,40 @@
                         <i class="fa-solid fa-bars"></i>
                     </a>
                     <ul class="menu">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="#">Menu One</a>
+                                </li>
+                                <li class="dropdown-child">
+                                    <a class="dropdown-item" href="#">Menu Two
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </a>
+
+                                    <ul class="dropdown-menu-child" aria-labelledby="dropdownMenuButton">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Sub Menu One</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Sub Menu Two</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Sub Menu Three</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Menu Three</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Inner Page</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -654,13 +684,13 @@
     <!-- End of Footer code -->
 
     <!-- Start of overlayer code -->
-    <div id="overlayer">
+    <div id="overlayer lorem">
 
     </div>
     <!-- End of overlayer code -->
 
     <!-- Start of Loader code -->
-    <div class="loader">
+    <div class="loader lorem" >
         <div class="spinner-border">
             <span class="sr-only">sr-only</span>
         </div>
@@ -677,7 +707,10 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    <script src="./assets/js/index.js"></script>
+    <script src="assets/js/index.js" type="module"></script>
+
+    <script src="assets/lib/aos/index.js" type="text/javascript"></script>
+    <script src="assets/lib/carousel/index.js" type="text/javascript"></script>
 
 </body>
 
